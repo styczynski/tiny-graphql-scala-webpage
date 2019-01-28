@@ -1,0 +1,3 @@
+[submodule "tiny-graphql-scala"]
+	path = tiny-graphql-scala
+	url = https://github.com/styczynski/tiny-graphql-scala.git
