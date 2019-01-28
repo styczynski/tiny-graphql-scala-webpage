@@ -4,12 +4,28 @@
 
 <html>
     <head>
-        <title>@title</title>
-        <title>Scala Getting Started on Heroku</title>
+        <title>Tiny GraphQL Scala demo</title>
         <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/main.css")" />
+
+        <script src="//ajaxorg.github.io/ace-builds/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <style>
+            #editorInput {
+                position: absolute;
+                height: 100vh;
+                width: 50vw;
+            }
+            #editorOutput {
+                position: relative;
+                height: 100vh;
+                width: 50vw;
+                left: 50vw;
+            }
+        </style>
+
     </head>
     <body>
         @nav()

@@ -3,6 +3,7 @@
 # ~~~~
 
 # Home page
+POST    /validate                   controllers.Application.validate
 GET     /                           controllers.Application.index
 GET     /db                         controllers.Application.db
 
