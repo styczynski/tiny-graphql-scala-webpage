@@ -20,16 +20,6 @@ object Application extends Controller {
 
   def validate = Action {
     request => {
-      val code =
-        """|
-           |input Inp {
-           |  w: Int!
-           |}
-           |
-           |type Type {
-           |  x(z: [[ID!]]!, q: [[String]!], p: [Inp!]): String
-           |}
-           |""".stripMargin
 
       val parser = SchemaParser()
       var schema: Option[GraphQLSchema] = None
